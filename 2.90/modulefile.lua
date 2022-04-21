@@ -26,7 +26,7 @@ To unload the module, type
 
 For help, type
 
-> bsmap
+> bsmap -h
 
 Tools included in this module are
 
