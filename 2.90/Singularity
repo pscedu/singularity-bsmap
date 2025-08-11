@@ -6,9 +6,12 @@ From: continuumio/anaconda3
     EMAIL icaoberg@psc.edu
     SUPPORT help@psc.edu
     REPOSITORY http://gitub.com/pscedu/singularity-bsmap
-    COPYRIGHT Copyright © 2021 Pittsburgh Supercomputing Center. All Rights Reserved.
+    COPYRIGHT Copyright © 2021-2025 Pittsburgh Supercomputing Center. All Rights Reserved.
     VERSION 2.90
 
 %post
     apt update
     conda install -c conda-forge -c bioconda bsmap
+
+%runscript
+    bsmap "$@"
